@@ -374,6 +374,9 @@ function MultiplayerEditor(
             ? {
                 height: 0,
                 opacity: 0,
+                // Hidden from assistive technology and focus while the cached
+                // copy is shown, otherwise the same content is announced twice.
+                visibility: "hidden",
               }
             : undefined
         }
